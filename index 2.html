@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIKE MOVET</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        body {
+            font-family: poppins, sans-serif;
+            background-image: url(./cover.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            height: 800px;
+            background-color: rgba(250, 193, 6, 0.61);
+            border-radius: 10px;
+            padding: 20px;
+            margin: auto;
+        }
+        
+        .input_field {}
+        
+        button {
+            background-color: rgb(3, 250, 135);
+            color: white;
+            border: none;
+        }
+        
+        button:hover {
+            background-color: rgb(3, 107, 73);
+            transition: 1s ease;
+            cursor: pointer;
+        }
+        
+         ::placeholder {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(5, 81, 133);">
+    <form action="">
+        <h2 style="flex-direction: column; text-align: center;">REGISTRATION FORM</h2>
+        <label for="name">First name</label>
+        <input id="first_name" type="text" placeholder="Enter first name">
+
+        <label for="last_name">Last name</label>
+        <input id="last_name" type="text" placeholder="Enter last name">
+
+        <label for="email">Email address</label>
+        <input type="text" name="email" id="email" placeholder="Enter email" margin 10px>
+
+        <label for="gender">Gender</label>
+        <select class="input_field" name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+
+        <label for="number">Phone number</label>
+        <input type="number" name="Phone_number" id="Phone_number" placeholder="Enter phone number">
+
+        <label for="place">Place of residence</label>
+        <input type="text" name="place_of_residence" id="place_of_residence" placeholder="Enter place of residence">
+
+        <label for="age"> Select age</label>
+
+
+        <div class="radio-container">
+            <input type="radio" name="age" id="age">
+            <label for="age below">Below 18</label>
+
+        </div>
+        <div class="radio-container">
+            <input type="radio" name="age" id="age_above">
+            <label for="age_above">Above 18</label>
+        </div>
+
+
+        <label for="program">Which program do you want?</label>
+
+        <div class="radio-container">
+            <input type="checkbox" name="program" id="Engineering">
+            <label for="engineering"> Mining Engineering</label>
+        </div>
+
+        <div class="radio-container">
+            <input type="checkbox" name="program" id="technology">
+            <label for="technology">Technical Education Technology</label>
+        </div>
+
+        <div class="radio-container">
+            <input type="checkbox" name="program" id="enviromental health">
+            <label for="enviromental_health">Environmental Health</label>
+
+        </div>
+
+        <div>
+            <input type="checkbox" name="program" id="information technology">
+            <label for="information_technology">Information Technology</label>
+        </div>
+
+        <button>Submit</button>
+
+        <div style="align-items: center; text-align: center;">
+            <p>Have an account?</p>
+            <a href="./success.html">Login</a>
+
+        </div>
+
+    </form>
+</body>
+
+</html>

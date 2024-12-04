@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <div style="background-image: url(./janko-ferlic-sfL_QOnmy00-unsplash.jpg); height: 120px; text-align: center; border-radius: 10px;">
+
+        <div style="display: flex; flex-direction: column;">
+            <h3>LIBRARY SURVEY</h3>
+            <P>Help us improve your local library</P>
+        </div>
+
+    </div>
+
+    <div>
+        <form action="">
+
+            <div style="display: flex; flex-direction: column; height: 150px; width: 300px;">
+                <div style="align-items: center;text-align: center;">
+                    <img src="./personal details.webp" alt="Detail">
+                    <P>Personal Details</P>
+                </div>
+
+
+                <label for="name">Name</label>
+                <input id="name" type="text" placeholder="Enter name">
+
+                <label for="email">Email address</label>
+                <input type="text" name="email" id="email" placeholder="Enter email">
+
+                <label for="age">Age</label>
+                <input type="age" name="age" id="age" placeholder="Ente age">
+            </div>
+        </form>
+
+        <form action="">
+            <div style="display: flex;text-align: left;align-items: flex-end; flex-direction:column; background-color: blue; margin-left: 1000px;">
+                <label for="gender">How often do you vist the library?</label>
+                <select class="input_field" name="library" id="library">
+                    <option value="30 minutes">30 Minutes</option>
+                    <option value="1 hour">1 Hour</option>
+                    <option value="3 hours">3 Hours</option>
+                    <option value="12 hours"> 12 Hours</option>
+                    <option value="24 hours">24 Hours</option>
+                </select>
+
+                <label for="program">Which program do you want?</label>
+
+                <div class="radio-container">
+                    <input type="checkbox" name="program" id="Engineering">
+                    <label for="engineering"> Mining Engineering</label>
+                </div>
+
+                <div class="radio-container">
+                    <input type="checkbox" name="program" id="technology">
+                    <label for="technology">Technical Education Technology</label>
+                </div>
+
+                <div class="radio-container">
+                    <input type="checkbox" name="program" id="enviromental health">
+                    <label for="enviromental_health">Environmental Health</label>
+
+                </div>
+
+                <div>
+                    <input type="checkbox" name="program" id="information technology">
+                    <label for="information_technology">Information Technology</label>
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+
+
+</body>
+
+</html>
